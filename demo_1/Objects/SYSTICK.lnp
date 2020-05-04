@@ -1,0 +1,10 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Lib\ARM\arm_cortexM0l_math.lib"
+".\objects\ht32_op.o"
+".\objects\startup_ht32f52342_52.o"
+".\objects\system_ht32f5xxxx_01.o"
+--strict --scatter ".\Objects\SYSTICK.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SYSTICK.map" -o .\Objects\SYSTICK.axf

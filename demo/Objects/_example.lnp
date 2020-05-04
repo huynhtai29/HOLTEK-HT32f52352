@@ -1,0 +1,9 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\ht32_op.o"
+".\objects\startup_ht32f52342_52.o"
+".\objects\system_ht32f5xxxx_01.o"
+--strict --scatter ".\Objects\_example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\_example.map" -o .\Objects\_example.axf
